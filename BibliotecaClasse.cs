@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    internal class Biblioteca
+    internal class BibliotecaClasse
     {
         private string nome;
         private string indirizzo;
@@ -14,7 +14,7 @@ namespace Biblioteca
         private string chiusura;
         private List<Libro> libri;
 
-        public Biblioteca(string nome, string indirizzo, string apertura, string chiusura, List<Libro> libri)
+        public BibliotecaClasse(string nome, string indirizzo, string apertura, string chiusura, List<Libro> libri)
         {
             this.nome = nome;
             this.indirizzo = indirizzo;
