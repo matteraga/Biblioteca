@@ -24,7 +24,7 @@ namespace Biblioteca
         {
             InitializeComponent();
         }
-
+        //Questo è un commento
         Biblioteca biblioteca;
         private void btnBiblioteca_Click(object sender, RoutedEventArgs e)
         {
