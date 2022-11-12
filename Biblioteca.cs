@@ -53,5 +53,10 @@ namespace Biblioteca
             if (libriAutore.Count > 0) return libriAutore;
             return null;
         }
+
+        public int numeroLibri()
+        {
+            return libri.Count;
+        }
     }
 }
