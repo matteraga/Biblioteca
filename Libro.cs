@@ -14,6 +14,15 @@ namespace Biblioteca
         private string editore;
         private int nPagine;
 
+        public Libro(string autore, string titolo, int annoPubblicazione, string editore, int nPagine)
+        {
+            this.autore = autore;
+            this.titolo = titolo;
+            this.annoPubblicazione = annoPubblicazione;
+            this.editore = editore;
+            this.nPagine = nPagine;
+        }
+
         public void setAutore(string autore)
         {
             this.autore = autore;
