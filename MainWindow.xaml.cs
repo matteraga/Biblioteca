@@ -58,5 +58,52 @@ namespace Biblioteca
                 }
             }
         }
+
+        private void btnCercaLibro_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtLibroTitolo.Text != string.Empty && biblioteca != null)
+            {
+                Libro libro = biblioteca.ricercaPerTitolo(txtLibroTitolo.Text);
+                if (libro != null)
+                {
+                    MessageBox.Show(libro.toString() + $"\nTempo di lettura: {libro.readingTime()}");
+                } 
+                else
+                {
+                    MessageBox.Show("Libro non trovato");
+                }
+                txtLibroTitolo.Text = string.Empty;
+            }
+        }
+
+        private void btnCercaLibri_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtLibroAutore.Text != string.Empty && biblioteca != null)
+            {
+                List<Libro> libriAuotre = biblioteca.ricercaPerAutore(txtLibroAutore.Text);
+                if (libriAuotre != null)
+                {
+                    string daStamapare = "";
+                    foreach (Libro libro in libriAuotre)
+                    {
+                        daStamapare += libro.toString() + "\n\n";
+                    }
+                    MessageBox.Show(daStamapare);
+                } 
+                else
+                {
+                    MessageBox.Show("Autore non trovato");
+                }
+                txtLibroAutore.Text = string.Empty;
+            }
+        }
+
+        private void btnNumeroLibri_Click(object sender, RoutedEventArgs e)
+        {
+            if (biblioteca != null)
+            {
+                MessageBox.Show(biblioteca.numeroLibri().ToString());
+            }
+        }
     }
 }
