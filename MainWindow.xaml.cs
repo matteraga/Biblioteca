@@ -25,7 +25,7 @@ namespace Biblioteca
             InitializeComponent();
         }
         //Questo è un commento
-        Biblioteca biblioteca;
+        BibliotecaClasse biblioteca;
         private void btnBiblioteca_Click(object sender, RoutedEventArgs e)
         {
             if (txtBiblioteca.Text != string.Empty)
@@ -33,7 +33,7 @@ namespace Biblioteca
                 string[] dati = txtBiblioteca.Text.Split('|');
                 if (dati.Length == 4)
                 {
-                    biblioteca = new Biblioteca(dati[0], dati[1], dati[2], dati[3], new List<Libro>());
+                    biblioteca = new BibliotecaClasse(dati[0], dati[1], dati[2], dati[3], new List<Libro>());
                     txtBiblioteca.Text = string.Empty;
                 }
             }
