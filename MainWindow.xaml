@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox x:Name="txtBiblioteca" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="20"/>
+        <Button x:Name="btnBiblioteca" Content="Aggiungi biblioteca" HorizontalAlignment="Left" Margin="265,10,0,0" VerticalAlignment="Top" Width="120" Click="btnBiblioteca_Click"/>
+        <TextBox x:Name="txtLibro" HorizontalAlignment="Left" Margin="10,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="20"/>
+        <Button x:Name="btnLibro" Content="Aggiungi libro" HorizontalAlignment="Left" Margin="265,35,0,0" VerticalAlignment="Top" Width="120" Click="btnLibro_Click"/>
+
     </Grid>
 </Window>
